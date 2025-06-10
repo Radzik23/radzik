@@ -1,0 +1,126 @@
+/* === BURGER MENU === */
+#burger-toggle {
+  display: none; /* <- domyślnie ukryty, pokazany tylko w mobile */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.burger-bar {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* zmiana koloru burgera po scrollu */
+.site-header.scrolled .burger-bar {
+  background-color: black;
+}
+
+/* === MENU MOBILNE === */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  max-width: 320px;
+  height: 100%;
+  background-color: #f9f9f9;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  z-index: 1000;
+  transition: right 0.3s ease;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+#close-menu {
+  background: none;
+  border: none;
+  font-size: 28px;
+  float: right;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  list-style: none;
+  padding: 60px 0 0 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 18px;
+}
+
+.mobile-nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.mobile-nav a:hover {
+  color: #b08968;
+}
+
+.mobile-nav .btn {
+  padding: 10px;
+  border: 2px solid #b08968;
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+@media (min-width: 1201px) {
+  #burger-toggle,
+  .mobile-menu {
+    display: none !important;
+  }
+
+  .main-menu,
+  .cta-button {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  #burger-toggle {
+    display: flex;
+  }
+
+  .main-menu,
+  .cta-button {
+    display: none !important;
+  }
+
+  .hero-overlay {
+    left: 50%;
+    transform: translate(-50%, -20%);
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0 auto 1.5rem;
+  }
+
+  .hero-btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}

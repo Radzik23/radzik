@@ -1,0 +1,129 @@
+.page-template-page-portfolio .site-header a {
+  color: black !important;
+}
+
+.page-id-11 .burger-bar {
+    background-color: black;
+}
+
+.portfolio-page {
+    font-family: 'Cormorant', serif;
+    background-color: #f9f9f9;
+    color: oklch(0.33 0 0);
+    padding: 60px 20px;
+}
+
+.portfolio {
+    background-color: #f9f9f9;
+}
+
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.portfolio-title {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.portfolio-heading {
+    font-size: 1.6rem;
+    color: oklch(0.64 0.06 60.38);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.portfolio-description {
+    font-size: 1.3rem;
+    color: oklch(0.33 0 0);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.portfolio-item a {
+    color: oklch(0.33 0 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.portfolio-item a:hover {
+    color: oklch(86.07% 0 0);
+}
+
+/* === CYTAT === */
+
+.testimonial-section {
+    background-color: oklch(0.93 0 0);
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: calc(-50vw + 50%);
+    margin-left: calc(-50vw + 50%);
+}
+
+.testimonial-quote {
+    font-size: 4rem;
+    color: oklch(0.59 0.06 54.16);
+    font-style: italic;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.testimonial-author {
+    color: oklch(0.59 0.06 54.16);
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding-left: 400px;
+}
+.quote-mark {
+    color: oklch(0.88 0.02 76.43);
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .testimonial-quote {
+        font-size: 2rem;
+        padding: 0 1rem;
+        line-height: 1.4;
+    }
+
+    .testimonial-author {
+        font-size: 1.2rem;
+        padding-left: 0;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .quote-mark {
+        font-size: 2.5rem;
+    }
+}
