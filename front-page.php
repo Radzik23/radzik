@@ -195,9 +195,9 @@ get_header();
     <section class="availability-section">
         <div class="availability-container">
             <h2>Check Availability</h2>
-            <p>Select a date to check if the photographer is available.<br>Unavailable dates are grayed out.</p>
+            <p>View the photographer’s availability calendar below.</p>
 
-            <input type="text" id="availability-calendar" placeholder="Select a date">
+            <div id="availability-calendar"></div>
         </div>
     </section>
 

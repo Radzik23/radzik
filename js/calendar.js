@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     flatpickr("#availability-calendar", {
       disable: calendarData.unavailableDates,
       dateFormat: "Y-m-d",
-      minDate: "today"
+      minDate: "today",
+      inline: true
     });
   }
 });
